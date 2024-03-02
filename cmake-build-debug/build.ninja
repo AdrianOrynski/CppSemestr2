@@ -49,8 +49,16 @@ cmake_ninja_workdir = C$:/Users/Adrian/Mój$ dysk/Studia/Semestr2/Cpp/Lista02/cma
 
 build cmake_object_order_depends_target_Lista02: phony || CMakeFiles/Lista02.dir
 
-build CMakeFiles/Lista02.dir/main.cpp.obj: CXX_COMPILER__Lista02_unscanned_Debug C$:/Users/Adrian/Mój$ dysk/Studia/Semestr2/Cpp/Lista02/main.cpp || cmake_object_order_depends_target_Lista02
-  DEP_FILE = CMakeFiles\Lista02.dir\main.cpp.obj.d
+build CMakeFiles/Lista02.dir/zadanie01.cpp.obj: CXX_COMPILER__Lista02_unscanned_Debug C$:/Users/Adrian/Mój$ dysk/Studia/Semestr2/Cpp/Lista02/zadanie01.cpp || cmake_object_order_depends_target_Lista02
+  DEP_FILE = CMakeFiles\Lista02.dir\zadanie01.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Lista02.dir
+  OBJECT_FILE_DIR = CMakeFiles\Lista02.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Lista02.dir\
+  TARGET_PDB = Lista02.pdb
+
+build CMakeFiles/Lista02.dir/zadanie02.cpp.obj: CXX_COMPILER__Lista02_unscanned_Debug C$:/Users/Adrian/Mój$ dysk/Studia/Semestr2/Cpp/Lista02/zadanie02.cpp || cmake_object_order_depends_target_Lista02
+  DEP_FILE = CMakeFiles\Lista02.dir\zadanie02.cpp.obj.d
   FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Lista02.dir
   OBJECT_FILE_DIR = CMakeFiles\Lista02.dir
@@ -65,7 +73,7 @@ build CMakeFiles/Lista02.dir/main.cpp.obj: CXX_COMPILER__Lista02_unscanned_Debug
 #############################################
 # Link the executable Lista02.exe
 
-build Lista02.exe: CXX_EXECUTABLE_LINKER__Lista02_Debug CMakeFiles/Lista02.dir/main.cpp.obj
+build Lista02.exe: CXX_EXECUTABLE_LINKER__Lista02_Debug CMakeFiles/Lista02.dir/zadanie01.cpp.obj CMakeFiles/Lista02.dir/zadanie02.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Lista02.dir
