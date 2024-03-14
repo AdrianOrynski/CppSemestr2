@@ -8,11 +8,12 @@ long double Licz_Ti_metodaA(int n)
     long double ti;
     if (n == 0)
     {
-        ti = (long double)1/ sqrt(3);
+        ti = 1.0L/ sqrt(3.0L);
     }
     else
     {
-        ti = (sqrt((pow(Licz_Ti_metodaA(n-1),2) + 1)) - 1)/ Licz_Ti_metodaA(n-1);
+        auto tmp = Licz_Ti_metodaA(n-1);
+        ti = (sqrt(tmp * tmp  + 1.0L) - 1.0L) / tmp;
     }
     return ti;
 }
@@ -22,11 +23,12 @@ long double Licz_Ti_metodaB(int n)
     long double ti;
     if (n == 0)
     {
-        ti = (long double)1/ sqrt(3);
+        ti = 1.0L/ sqrt(3.0L);
     }
     else
     {
-        ti = Licz_Ti_metodaA(n-1)/(sqrt((pow(Licz_Ti_metodaB(n-1),2) + 1)) + 1);
+        auto tmp = Licz_Ti_metodaB(n-1);
+        ti = tmp / (sqrt(tmp * tmp + 1.0) + 1.0);
     }
     return ti;
 }
@@ -35,7 +37,8 @@ int main()
 {
     long double MetodaA;
     long double MetodaB;
-    for(int i = 0; i <= 30; i++)
+    cout.precision(10);
+    for(int i = 0; i <= 40; i++)
     {
         long double tia = Licz_Ti_metodaA(i);
         long double tib = Licz_Ti_metodaB(i);
