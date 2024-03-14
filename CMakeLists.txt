@@ -3,4 +3,7 @@ project(Lista01)
 
 set(CMAKE_CXX_STANDARD 23)
 
-add_executable(Lista01 main.cpp)
+add_executable(zad1 zadanie01.cpp)
+add_executable(zad2 zadanie02.cpp)
+add_executable(zad3 zadanie03.cpp)
+
