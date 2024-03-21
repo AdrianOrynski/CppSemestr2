@@ -1,0 +1,78 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.27"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Lista04",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "zad1::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zad1-Debug-bd78ab840254102ffce2.json",
+					"name" : "zad1",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zad2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zad2-Debug-277f5a3a3274cfdcfe16.json",
+					"name" : "zad2",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zad3::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zad3-Debug-12fe258ca21fd8d00d2f.json",
+					"name" : "zad3",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/adror/M\u00f3j dysk/Studia/Semestr2/Cpp/Lista04/cmake-build-debug",
+		"source" : "C:/Users/adror/M\u00f3j dysk/Studia/Semestr2/Cpp/Lista04"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}
